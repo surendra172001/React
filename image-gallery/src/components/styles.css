@@ -1,40 +1,56 @@
-.main-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: Helvetica neue, roboto;
-  }
-  
-  h1 {
-    font-weight: 200;
-    font-style: 26px;
-    margin: 10px;
-  }
-  
-  p {
-    font-style: italic;
-    font-size: 40px;
-  }
-  
-  input {
-    margin: 5px;
-    height: 40px;
-    width: 100%;
-    border: 2px lightgray solid;
-    border-radius: 6px;
-    color: black;
-  }
-  
-  button {
-    font-size: large;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 5px;
-    height: 40px;
-    width: 50%;
-    border-radius: 5px;
-    background-color: purple;
-  }
+.gallery-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-style: italic;
+  font-size: 40px;
+}
+
+.add-input {
+  width: 100%;
+  height: 35px;
+  border-radius: 6px;
+  border: 1px lightgray solid;
+  padding: 10px;
+}
+
+.input-area {
+  height: 100px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn {
+  width: 200px;
+  height: 50px;
+  background-color: purple;
+  color: white;
+  font-size: 18px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.gallery-area {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  min-height: 400px;
+}
+
+.image-card {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 7px;
+  margin: 10px;
+}
